@@ -38,7 +38,7 @@ function ShowProducts() {
             },
           })
           .then((response) => {
-            window.location.reload();
+            let res = response.data
           })
           .catch((err) => {
             console.log(err);
