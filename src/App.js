@@ -1,20 +1,15 @@
-import React, { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AddProduct from "./pages/AddProduct";
-import ShowProducts from "./pages/ShowProducts";
+import ShowProducts from "./pages/ShowProducts"
 
-const App = () => {
-  const [path, setPath] = useState(window.location.pathname);
-  if(window.location.href === 'https://andrejbadzovski-test.000webhostapp.com/'){
-    return (<ShowProducts/>)
-  }
-
+export default function App() {
   return (
-    <div>
-      <AddProduct/>
-    </div>
-
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ShowProducts />} />
+        <Route path='/products' element={<AddProduct />} />
+      </Routes>
+    </BrowserRouter>
   );
-};
-
-export default App;
+}
 
