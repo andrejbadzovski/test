@@ -1,0 +1,123 @@
+.container {
+    margin: 30px auto 0;
+    max-width: 90%;
+    padding: 0 15px;
+}
+
+.input {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inputHeight { 
+    height: 20px;
+}
+
+.hideInput {
+    display: none;
+}
+
+
+
+.select {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    column-gap: 35px;
+}
+
+.errorMessage {
+    display: block;
+    color:red;
+    height: 25px;
+}
+
+.cardMain {
+  
+    display:flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    
+}
+
+.cards {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    text-align: center;
+    border: 1px solid black;
+    height: 200px;
+  }
+.cards > div {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.cards > input[type="checkbox"] {
+    align-self: flex-start;
+    width: 15px;
+    height: 15px;
+}
+
+.mainDelete {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.buttonStyle {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 20px;
+}
+
+.buttonStyle > button {
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: red;
+}
+
+.buttonStyle > a {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buttonSave {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: green;
+}
+
+
+.mainAdd {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.headerText {
+    font-weight: bold;
+    font-size: 30px;
+}
